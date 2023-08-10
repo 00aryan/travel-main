@@ -14,35 +14,170 @@
     <link type="text/css" rel="stylesheet" href="css/owl.carousel.min.css">
     <link type="text/css" rel="stylesheet" href="css/owl.theme.default.min.css">
     <link type="text/css" rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+        <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
     <style>
-        .back{
-            background:linear-gradient(45deg, green,white) ;
+        .back {
+            background: linear-gradient(45deg, rgb(21, 148, 221), white);
             color: black;
         }
+        .navbar {
+      position: fixed;
+      top: 0px;
+      z-index: 99;
+      width: 100%;}
+
+        /* #add{
+            width: 90%;
+            position:absolute ;
+            left: 10px;
+            bottom: -40px;
+            opacity: 0;
+            transition: 1s;
+        }
+        .col-md-3{
+            position: relative;
+        }
+        #add:hover{
+            position: absolute;
+            bottom: 0px;
+            opacity: 1;
+            
+
+        } */
+        .logo-par {
+            /* position: absolute;
+    top: -1px;
+    left: -1px;  */
+            width: 80px;
+            height: 80px;
+            border-radius: 100%;
+            transform: translateY(-60px);
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            padding: 12px 16px;
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .join:hover {
+            background-color: blue;
+            color: red;
+            transform: translate(5px);
+
+        }
+
+        @media(max-width: 768px) {
+            .logo-par {
+                /* position: absolute;
+    top: -1px;
+    left: -1px;  */
+                width: 50px;
+                height: 50px;
+                border-radius: 100%;
+                /* transform: translateY(-60px); */
+
+            }
+        }
+        #choose{
+            margin-top: 10px;
+            margin-bottom: -24px;
+            background-color: rgb(119, 119, 228);
+            color: white;
+        }
+        table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  padding-bottom: 10px;
+}
+th{
+    border: 2px solid aqua;
+    color: rgb(55, 0, 255);
+    font-size: 30px;
+    text-align: center;
+}
+
+td {
+  border: 2px solid #c1bacc;
+  text-align: left;
+  padding: 2px;
+  font-size: 23px;
+  color: white;
+
+}
+/* 
+tr:nth-child(even) {
+  background-color: #dddddd; */
+}
     </style>
 </head>
 
 <body>
+
     <div id="arrow">
         <i class="fa fa-arrow-up"></i>
     </div>
-    <nav>
-        <div class="container">
+
+   <!-- <nav>
+        <div class="container-fluid">
+
             <div class="menu-par">
                 <div class="logo-par">
-                    <a href="index.html">
-                        <h2>Travel</h2>
-                    </a>
+
+                    <img src="images/logo.png" alt="" style="height: 150px; width: 150px; border-radius: 100% ">
+
+
                 </div>
-                <div class="nav">
+
+                <div class="nav" style=" color: white; ">
                     <ul>
                         <li><a class="menu-hover" href="index.html">Home</a></li>
-                        <li><a class="menu-hover" href="index.html">Travel</a></li>
+                        <li class="dropdown">
+                            <a href=""><U>Travel</U></a>
+                            <ul class="dropdown-content">
+                                <li class=""><a href="adven.html" style="color: black;">Adventure</a></li>
+                                <br>
+                                <br>
+                                <li class=""> <a href="monuments.html" style="color:black;">Monuments </a></li>
+                                <br>
+
+                                <br>
+                                <li class=""> <a href="Tempels .html" style="color:black;"> Tempels </a></li>
+
+                            </ul>
+                        </li>
                         <li><a class="menu-hover" href="book.html">Book Now</a></li>
-                        <li><a class="menu-hover" href="index.html">Gallery</a></li>
-                        <li><a class="menu-hover" href="index.html">Holyday</a></li>
-                        <li><a class="menu-hover" href="index.html">Blog</a></li>
+                        <li><a class="menu-hover" href="tempels.html">Gallery</a></li>
+                        <!-- <li><a class="menu-hover" href="login.html">login</a></li>
+                        <li><a class="menu-hover" href="register.html">register</a></li> 
+                        <li class="dropdown">
+                            <a href=""><u>My Account</u></a>
+                            <ul class="dropdown-content">
+                                <li class="join"><a href="login.html"
+                                        style=" background-color: rgb(7, 71, 7);">login</a></li>
+                                <br>
+                                <br>
+                                <li class="join"> <a href="" data-bs-toggle="modal" data-bs-target="#register"
+                                        style="color:green; border: solid green 2px;">sign UP </a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
                 <div id="toggle-btn">
@@ -50,7 +185,57 @@
                 </div>
             </div>
         </div>
-    </nav>
+        </div>
+    </nav> -->
+    <section>
+        <section style="">
+            <nav class="navbar navbar-expand-lg bg-light">
+              <div class="container-fluid" style="">
+                <!-- <a class="navbar-brand" href="#"><img src="images/logo.png" alt="" height="100px" width="100px"></a> -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="font-size: 20px;">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="book.html">Book Now</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Travel
+                      </a>
+                      <ul class="dropdown-content">
+                        <li><a class="dropdown-item" href="adven.html">Adventure</a></li>
+                        <li><a class="dropdown-item" href="monuments.html">Monuments</a></li>
+                        
+                        <li><a class="dropdown-item" href="Tempels .html">Tempels</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        My Account
+                      </a>
+                      <ul class="dropdown-content">
+                        <li class="join"><a href="login.html" style=" background-color: rgb(7, 71, 7); color: white;" >login</a></li>
+                        <li class="join"> <a href=""data-bs-toggle="modal" data-bs-target="#signup" style="color:green; border: solid green 2px;">sign UP </a></li>
+                        
+                      </ul>
+                    </li>
+                   
+                    
+                  </ul>
+                  <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form>
+                </div>
+              </div>
+            </nav>
+          </section>
+    </section>
 
     <header>
         <div class="container">
@@ -69,10 +254,12 @@
         </div>
     </header>
     <!-- Second Slides Section -->
-    <section id="welcome-text">
+    <section class="xyz">
+    <section id="welcome-text" >
         <div class="container">
-            <h2>The Official Travel Site of the friendly Fiji Islands</h2>
-            <p>when an unknown printer took a gallery of type and scrambled it to make a type speicmen</p>
+            <h2>Enjoy Your Solo  Trip Now </h2>
+            <p> Being India's leading website for hotel, flight, and holiday bookings, YOUR Shaphar helps you book flight tickets that are affordable and customized to you
+            </p>
         </div>
     </section>
     <!-- Slides Section Start-->
@@ -111,12 +298,15 @@
                 </div>
                 <div class="slide_1 slide_8">
                     <div class="slide-info">
-                      <a href="tempels.html"><p>Tempels</p></a>  
+                        <a href="tempels.html">
+                            <p>Tempels</p>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+</section>
     <!-- Slides Section Start-->
 
     <!-- Book Now Section Start -->
@@ -166,34 +356,73 @@
         </div>
     </section>
     <!-- Book Now Section End -->
+    <section class="part">
+        <div class="container-fluid">
+            <h1 id="choose" style="color:#ffffff" class="text-center">START YOUR JOURNY</h1>
+            <hr style="border: 0px solid white">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="owl-carousel owl-theme" id="partenerrr">
+
+                        <div class="item">
+                            <center><img src="images/bus.jpeg"data-bs-toggle="modal" data-bs-target="#busModal" class="img-fluid" alt="dbms">
+                            <div style="background:rgb(62, 144, 211); padding: 10px"><h4 class="zoom" data-bs-toggle="modal" data-bs-target="#busModal">Book Now</h4></small></div>
+                            </center>
+                        </div>
+                        <div class="item">
+                            <center><img src="images/flight.png"data-bs-toggle="modal"
+                                data-bs-target="#exampleModal" class="img-fluid" alt="dbms">
+                            <div style="background:rgb(62, 144, 211); padding: 10px"><h4 class="zoom" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">Book Now</h4></small></div>
+                            </center>
+                        </div>
+                        <div class="item">
+                            <center><img src="images/train.jpg" data-bs-toggle="modal" data-bs-target="#trainModal" class="img-fluid" alt="dbms">
+                            <div style="background:rgb(62, 144, 211); padding: 10px"><h4 class="zoom" data-bs-toggle="modal" data-bs-target="#trainModal">Book Now</h4></small></div>
+                            </center>
+                        </div>
+                        <div class="item">
+                            <center><img src="images/hotel.jpg"data-bs-toggle="modal" data-bs-target="#hotealModal" class="img-fluid" alt="dbms">
+                            <div style="background:rgb(62, 144, 211); padding: 10px"><h4 class="zoom"  data-bs-toggle="modal" data-bs-target="#hotealModal">Book Now</h4></small></div>
+                            </center>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
     <!-- ticket booking section-->
-    <br>
-    <br>
-<section>
-    <div class="container-fluid">
-        <div class="row">
-            
-                <div class="col-md-3">
-            <button><a href="flightbooking.html"  data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="images/flight.jpg" alt="" class="zoom"></a> </button>
-         </div>
-         <div class="col-md-3">
-            <button> <a href="train.html"data-bs-toggle="modal" data-bs-target="#trainModal">
-        
-            <img src="images/train.jpg" alt="" class="zoom"></a></button>
-         </div>
-         <div class="col-md-3">
-            <button> <a href="bus.html" data-bs-toggle="modal" data-bs-target="#busModal"> <img src="images/bus.jpg" alt="" class="zoom"></a></button>
-            
-         
-        </div>
-        <div class="col-md-3">
-            <button> <a href="hoteal.html"  > <img src="images/hoteal.webp" alt="" class="zoom"></a></button>
-        </div>
-        </div>
-    </div>
     
-</section>
- <!-- ticket booking section end-->
+    <!-- <section>
+        <div class="container-fluid">
+            <div class="row ">
+
+                <div class="col-md-3">
+                    <img src="images/flight.jpg" alt="" class="zoom" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+
+                </div>
+                <div class="col-md-3">
+                    <img src="images/train.jpg" alt="" class="zoom" data-bs-toggle="modal" data-bs-target="#trainModal">
+
+                </div>
+                <div class="col-md-3">
+                    <img src="images/bus.jpg" alt="" class="zoom" data-bs-toggle="modal" data-bs-target="#busModal">
+
+
+                </div>
+                <div class="col-md-3">
+                    <img src="images/hoteal.webp" alt="" class="zoom"  data-bs-toggle="modal" data-bs-target="#hotealModal">
+
+                </div>
+            </div>
+        </div>
+
+    </section> -->
+    <!-- ticket booking section end-->
     <!-- Gallery Section Starts -->
     <section id="gallery">
         <div class="container-fluid">
@@ -290,12 +519,49 @@
     </section>
     <!-- Blog Section Starts -->
     <section id="blog">
-        <div class="container">
-            <h3>News And Events</h3>
+        <div class="container ">
+            <h3> Why Book With Us</h3>
             <div class="blog-par">
                 <div class="blog-content">
                     <!-- one div for image and one for info -->
+                    <!-- <div class="blog-img-par">
+                        <img src="images/slider/bangcok.jpg" alt="" class="img-responsive">
+
+                    </div> -->
+                    <div class="blog-info-par">
+                        <!-- <ul>
+                            <li></li>
+                            <li></li>
+                        </ul> -->
+                         <h4><u>Book Flights, Hotels, Trains, Buses, Cruise and Holiday Packages </u></h4> 
+                        <p>On Shaphar.com, you can tailor your trip from end-to-end by scouring suitable flights and making your flight booking before proceeding with your hotel bookings. Shaphar.com vast hotel repository will see you through this process seamlessly. Any intervening journey can be conveniently planned by searching up relevant train connectivity and making an IRCTC ticket booking. Look up well-researched holiday packages, sift through cruise packages and finalise your entire trip on just one platform</p>
+
+                    </div>
+                    
+                </div>
+                
+                <!-- <div class="blog-content">
+                    <!-- one div for image and one for info 
                     <div class="blog-img-par">
+                        <img src="images/slider/cario.jpg" alt="" class="img-responsive">
+
+                    </div>
+                    <div class="blog-info-par">
+                        <ul>
+                            <li>Chiru Vishnoi</li>
+                            <li>24.08.2021</li>
+                        </ul>
+                        <h4>WHY </h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut natus, deserunt deleniti
+                            sapiente omnis ab quas mollitia! Cumque, maxime at.</p>
+
+                    </div>
+                </div> -->
+            <!-- </div>
+            <div class="blog-par">
+                <div class="blog-content">
+                    <!-- one div for image and one for info -->
+                    <!-- <div class="blog-img-par">
                         <img src="images/slider/bangcok.jpg" alt="" class="img-responsive">
 
                     </div>
@@ -310,8 +576,8 @@
 
                     </div>
                 </div>
-                <div class="blog-content">
-                    <!-- one div for image and one for info -->
+                <div class="blog-content"> -->
+                    <!-- one div for image and one for info -
                     <div class="blog-img-par">
                         <img src="images/slider/cario.jpg" alt="" class="img-responsive">
 
@@ -326,194 +592,335 @@
                             sapiente omnis ab quas mollitia! Cumque, maxime at.</p>
 
                     </div>
-                </div>
-            </div>
-            <div class="blog-par">
-                <div class="blog-content">
-                    <!-- one div for image and one for info -->
-                    <div class="blog-img-par">
-                        <img src="images/slider/bangcok.jpg" alt="" class="img-responsive">
-
-                    </div>
-                    <div class="blog-info-par">
-                        <ul>
-                            <li>Chiru Vishnoi</li>
-                            <li>24.08.2021</li>
-                        </ul>
-                        <h4>Lorem ipsum dolor consectetur</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut natus, deserunt deleniti
-                            sapiente omnis ab quas mollitia! Cumque, maxime at.</p>
-
-                    </div>
-                </div>
-                <div class="blog-content">
-                    <!-- one div for image and one for info -->
-                    <div class="blog-img-par">
-                        <img src="images/slider/cario.jpg" alt="" class="img-responsive">
-
-                    </div>
-                    <div class="blog-info-par">
-                        <ul>
-                            <li>Chiru Vishnoi</li>
-                            <li>24.08.2021</li>
-                        </ul>
-                        <h4>Lorem ipsum dolor consectetur</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut natus, deserunt deleniti
-                            sapiente omnis ab quas mollitia! Cumque, maxime at.</p>
-
-                    </div>
-                </div>
+                </div>-->
+            </div> 
+            <div class="container">
+                <table class="">
+                    
+                        <tr>
+                          <th >Our Products</th>
+                          <th>	Features</th>
+                          
+                        </tr>
+                        <tr>
+                          <td>Flight</td>
+                          <td>Book a flight ticket for any domestic and international Airlines</td>
+                          
+                        </tr>
+                        <tr>
+                          <td>Train</td>
+                          <td>Search for routes and schedules, check fares and book train tickets</td>
+                          
+                        </tr>
+                        <tr>
+                          <td>Hotels</td>
+                          <td>Travel to any destination in India and get exclusive deals on hotels</td>
+                        
+                        </tr>
+                        <tr>
+                          <td>Bus Booking</td>
+                          <td>Find state-run buses, Volvo coaches, etc. between cities in India</td>
+                          
+                        </tr>
+                        <tr>
+                          <td>Holidays</td>
+                          <td>Customized Holiday Packages with all highlights of your destination</td>
+                          
+                        </tr>
+                       
+                      
+                  </table>
             </div>
         </div>
     </section>
     <!-- Mutiple Slider Section Ends -->
- <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" >
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">BOOK NOW</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-            <section class="back">
-                <div >
-                  
-                  <div class="container">
-                      <div class="book-content-par">  
-                          <div class="book-form" style="margin-left:10%;">
-                              <form style="height: 300px; width: 400px; overflow: scroll ">
-                                  <h1 class="fa fa-plane" aria-hidden="true"> BOOK NOW </h1>
-                                  <br>
-                                  <br>
-                                  <div style="word-spacing: 2px;">
-                                  <input type="checkbox">Round_trip
-                                  <input type="checkbox">One-Way_trip
-                                  <input type="checkbox">Multi-cities
-                              </div>
-                                  <input type="text" id="fname" name="flying" placeholder="Flying from">
-                                  <input type="text" id="lname" name="flying" placeholder="Flying to">
-                                  <h3>Select your Flight</h3>
-                                  <select name="Airline" id="Airline">
-                                      <option value="airindia">Air india</option>
-                                      <option value="canada">Air asia</option>
-                                      <option value="usa">Indigo</option>
-                                      <option value="Europe">Air asia</option>
-                                  </select>
-                                  <h6 style="font-family:Arial, Helvetica, sans-serif">  let us know about your specia requirement</h6>
-                                  <textarea name="subject" id="subject" placeholder="Write something..."
-                                      style="height:100px;"></textarea>
-                                  <input type="submit" value="Submit">
-                              </form>
-                          </div>
-                      </div>
-                      </div>
-                  </div>
-              </div>
-              </section>
-        </div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">BOOK NOW</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <section class="back">
+                        <div>
 
-        <!-- <div class="modal-footer">
+                            <div class="container">
+                                <div class="book-content-par">
+                                    <div class="book-form" >
+                                        <!-- <form style="height: 300px; width: 400px; overflow: scroll "> -->
+                                        <form>
+                                            <h1 class="fa fa-plane" aria-hidden="true"> BOOK NOW </h1>
+                                            <br>
+                                            <br>
+                                            <div style="word-spacing: 2px;">
+                                                <input type="checkbox">Round_trip
+                                                <input type="checkbox">One-Way_trip
+                                                <input type="checkbox">Multi-cities
+                                            </div>
+                                            <input type="text" id="fname" name="flying" placeholder="Flying from">
+                                            <input type="text" id="lname" name="flying" placeholder="Flying to">
+                                            <h6>Select your Flight</h6>
+                                            <select name="Airline" id="Airline">
+                                                <option value="airindia">Air india</option>
+                                                <option value="canada">Air asia</option>
+                                                <option value="usa">Indigo</option>
+                                                <option value="Europe">Air asia</option>
+                                            </select>
+                                            <h6 style="font-family:Arial, Helvetica, sans-serif"> let us know about your
+                                                specia requirement</h6>
+                                            <textarea name="subject" id="subject" placeholder="Write something..."
+                                                style="height:100px;"></textarea>
+                                            <input type="submit" value="Submit">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                </section>
+            </div>
+
+            <!-- <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
           <button type="button" class="btn btn-primary">Save changes</button>
         </div> -->
-      </div>
-    </div>
-  </div>
-  <section>
-
-
-  
-  <!-- Modal -->
-  <div class="modal fade" id="busModal" tabindex="-1" aria-labelledby="busModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="busModalLabel">BOOK NOW</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body">
-          
-            <div class="back">
-                      <div class="container">
-                        <div class="book-content-par">  
-                            <div class="book-form" style="margin-left: 10%;">
-                                <form style="height: 300px; width: 400px; overflow: scroll;">
-                                    <h1 class="fa fa-bus" aria-hidden="true"> BOOK NOW </h1>
-                                    <br>
-                                    <br>
-                                    <div style="word-spacing: 4px;">
-                                    <input type="checkbox">Round_trip
-                                    <input type="checkbox">One-Way_trip
-                                    <input type="checkbox">Multi-cities
+    </div>
+    </div>
+    <section>
+
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="busModal" tabindex="-1" aria-labelledby="busModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="busModalLabel">BOOK NOW</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+
+                        <div class="back">
+                            <div class="container">
+                                <div class="book-content-par">
+                                    <div class="book-form">
+                                        <form >
+                                            <h1 class="fa fa-bus" aria-hidden="true"> BOOK NOW </h1>
+                                            <br>
+                                            <br>
+                                            <div style="word-spacing: 4px;">
+                                                <input type="checkbox">Round_trip
+                                                <input type="checkbox">One-Way_trip
+                                                <input type="checkbox">Multi-cities
+                                            </div>
+                                            <input type="text" id="fname" name="flying" placeholder=" from">
+                                            <input type="text" id="lname" name="flying" placeholder="to">
+
+
+                                            <h6 style="font-family:Arial, Helvetica, sans-serif"> let us know about your
+                                                specia requirement</h6>
+                                            <textarea name="subject" id="subject" placeholder="Write something..."
+                                                style="height:100px;"></textarea>
+                                            <input type="submit" value="Submit">
+                                        </form>
+                                    </div>
                                 </div>
-                                    <input type="text" id="fname" name="flying" placeholder=" from">
-                                    <input type="text" id="lname" name="flying" placeholder="to">
-                                    
-                                    
-                                    <h6 style="font-family:Arial, Helvetica, sans-serif">  let us know about your specia requirement</h6>
-                                    <textarea name="subject" id="subject" placeholder="Write something..."
-                                        style="height:100px;"></textarea>
-                                    <input type="submit" value="Submit">
-                                </form>
                             </div>
                         </div>
-                        </div> 
                     </div>
                 </div>
-              </div>
             </div>
-  </div>
-                
-        
-  </section>
-  <section>
-
-
-  
-    <!-- Modal -->
-    <div class="modal fade" id="trainModal" tabindex="-1" aria-labelledby="trainModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="trainModalLabel">BOOK NOW</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            
-              <div class="back">
-                        <div class="container">
-                          <div class="book-content-par">  
-                              <div class="book-form" style="margin-left: 10%;">
-                                  <form style="height: 300px; width: 400px; overflow: scroll;">
-                                      <h1 class="fa fa-train" aria-hidden="true"> BOOK NOW </h1>
-                                      <br>
-                                      <br>
-                                      <div style="word-spacing: 4px;">
-                                      <input type="checkbox">Round_trip
-                                      <input type="checkbox">One-Way_trip
-                                      
-                                  </div>
-                                      <input type="text" id="fname" name="flying" placeholder=" from">
-                                      <input type="text" id="lname" name="flying" placeholder="to">
-                                      
-                                      
-                                      <h6 style="font-family:Arial, Helvetica, sans-serif">  let us know about your specia requirement</h6>
-                                      <textarea name="subject" id="subject" placeholder="Write something..."
-                                          style="height:100px;"></textarea>
-                                      <input type="submit" value="Submit">
-                                  </form>
-                              </div>
-                          </div>
-                          </div> 
-                      </div>
-                  </div>
+        </div>
+<section>
+    <div class="modal fade" id="hotealModal" tabindex="-1" aria-labelledby="hotealModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="hotealModalLabel">BOOK NOW</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-              </div>
+                <div class="modal-body">
+
+                    <div class="back">
+                        <div class="container">
+                            <div class="book-content-par">
+                                <div class="book-form">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="exampleInputname" class="form-label fa fa-hotel fa-beat">select city,search
+                                                hoteal</label>
+                                            <select name="hoteal" id="">
+                                                <option value="Goa">Goa</option>
+                                                <option value="Himachal perdesh">Himachal perdesh</option>
+                                                <option value="varanashi">varanashi</option>
+                                                <option value="rajasthan">rajasthan</option>
+                                                <option value="delhi">delhi</option>
+                                                <option value="kashmir">kashmir</option>
+                                                <option value="varanashi">varanashi</option>
+                                                <option value="rajasthan">rajasthan</option>
+                                            </select>
+                                
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleInputname" class="form-label">chack in</label>
+                                            <input type="date" class="form-control">
+                                
+                                        
+                                        
+                                            <label for="exampleInputEmail1" class="form-label">checkout</label>
+                                            <input type="date" class="form-control">
+                                            
+                                        </div>
+                                         Adult
+                                        <div class="mb-3">
+                                           
+                                            <input type="number" >
+                                        </div>
+                                            
+                                            <div class="col-md-3">
+                                                children
+                                            <input type="number" >
+                                            
+                                            </div>
+                                       <br>
+                                
+                                        <div class="col-md-3">
+                                            <input type="submit" value="search hoteal"
+                                                style="width: 450px; border-radius: 30px; background-color: gray;"
+                                                >
+                                            <br>
+                                            <br>
+                                            
+                                        </div>
+                                
+                                
+                                
+                                    </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-                  
-          
+    
+</section>
+
     </section>
+    <section>
+
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="trainModal" tabindex="-1" aria-labelledby="trainModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="trainModalLabel">BOOK NOW</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+
+                        <div class="back col-12 ">
+                            <div class="container">
+                                <div class="book-content-par">
+                                    <div class="book-form">
+                                        <form>
+                                            <h1 class="fa fa-train" aria-hidden="true"> BOOK NOW </h1>
+                                            <br>
+                                            <br>
+                                            <div style="word-spacing: 4px;">
+                                                <input type="checkbox">Round_trip
+                                                <input type="checkbox">One-Way_trip
+
+                                            </div>
+                                            <input type="text" id="fname" name="flying" placeholder=" from">
+                                            <input type="text" id="lname" name="flying" placeholder="to">
+
+
+                                            <h6 style="font-family:Arial, Helvetica, sans-serif"> let us know about your
+                                                specia requirement</h6>
+                                            <textarea name="subject" id="subject" placeholder="Write something..."
+                                                style="height:100px;"></textarea>
+                                            <input type="submit" value="Submit">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section>
+        <div class="modal fade" id="register" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="registerLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="registerLabel">sign UP</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body " style="    background: #092b0c3d;
+        border: 2px solid rgb(0, 0, 0);
+        
+        padding: 16px;">
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputname" class="form-label">First name</label>
+                                <input type="test" class="form-control" id="name" placeholder="enter your first name">
+
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputname" class="form-label">Last name</label>
+                                <input type="test" class="form-control" id="name" placeholder="enter your last name">
+
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                            </div>
+
+                            <div class="col-md-3">
+                                <input type="submit" value="submit"
+                                    style="width: 450px; border-radius: 30px; background-color: gray;"
+                                    data-bs-toggle="modal" data-bs-target="#successful">
+                                <br>
+                                <br>
+                                <!-- <input type="button" value="login"  style="width: 450px; border-radius: 30px; background-color: gray;"> -->
+                            </div>
+
+
+
+                        </form>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                    </div>
+                </div>
+            </div>
+    </section>
+    d
     <!-- Footer Starts-->
     <footer>
         <div class="container">
@@ -525,10 +932,11 @@
                     <h3>Our Service</h3>
                     <ul>
                         <li><a href="read.html">Travel gide</a></li>
-                        <li><a href="hoteal.html">Hoteal booking</a></li>
+                        <li><a href="hoteal.html"data-bs-toggle="modal" data-bs-target="#hotealModal">Hoteal booking</a></li>
                         <li><a href="bus.html">Bus booking</a></li>
                         <li><a href="train.html">Train Booking</a></li>
-                        <li><a href="flightbooking.html">Flight booking Booking</a></li>
+                        <li><a href="flightbooking.html" data-bs-toggle="modal" data-bs-target="#exampleModal">Flight
+                                Booking</a></li>
                     </ul>
                 </div>
                 <div class="footer-1 footer-info">
@@ -555,7 +963,47 @@
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/extrenaljq.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+        
+        <script src="owlcarousel/owl.carousel.min.js"></script>
+        
+     <script>
+        $(document).ready(function(){
+          var owl = $('#partenerrr');
+          owl.owlCarousel({
+              loop:true,
+              nav:false,
+              margin:10,
+              autoplay:true,
+              autoplayTimeout:1000,
+              responsive:{
+  
+                  0:{
+  
+                      items:1
+                  },
+                  375:{
+  
+                      items:2
+                  },
+                  600:{
+  
+                      items:3
+                  },
+                  960:{
+  
+                      items:3
+                  },
+                  1200:{
+  
+                      items:4
+                  }
+              }
+          });
+        });
+      </script>
 </body>
 
 </html>
